@@ -1,20 +1,21 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.0",
   "license": "MIT",
 
-  "name": "hyper-ayu-light",
+  "name": "hyper-ayu-light-special",
   "description": "Ayu Light Hyper theme",
-  "author": "Patricio Trevino <patricio@weirdpattern.com>",
+  "author": "Yoyo Young <yoyoys@livemail.tw>",
 
   "repository": {
     "type": "git",
-    "url": "https://www.github.com/weirdpattern/hyper-ayu-light"
+    "url": "https://www.github.com/yoyoys/hyper-ayu-light-special"
   },
 
   "main": "index.js",
 
   "keywords": [
     "weirdpattern",
+    "yoyoys",
     "hyper",
     "hyper-theme",
     "ayu",

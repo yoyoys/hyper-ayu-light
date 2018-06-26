@@ -27,6 +27,8 @@
 const BACKGROUND = '#F5F5F5';
 const FOREGROUND = '#5C6773';
 
+const BLACK = '#5C6066';
+
 const RED = '#ff3333';
 const LIGHT_RED = '#FF8080';
 const GREEN = '#86B300';
@@ -51,7 +53,7 @@ const TAB_TEXT_COLOR = FOREGROUND;
 const TAB_BORDER_ACTIVE_COLOR = '#FF6A00';
 
 const colors = {
-  black: BACKGROUND,
+  black: BLACK,
   red: RED,
   green: GREEN,
   yellow: YELLOW,

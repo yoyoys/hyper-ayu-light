@@ -1,28 +1,18 @@
 # Ayu Light Hyper Theme
-Ayu (light) for Hyper
+Ayu (light special) for Hyper
+Forked from [hyper-ayu-light](https://www.github.com/weirdpattern/hyper-ayu-light)
 
-macOS (no borders)
-![Ayu Light Hyper Theme - No border](https://cloud.githubusercontent.com/assets/19519411/26436362/8ca8aea8-40db-11e7-9db8-e14d465c68af.png)
-
-macOS (border)
-![Ayu Light Hyper Theme - Border](https://cloud.githubusercontent.com/assets/19519411/26339179/a55b2bd8-3f4b-11e7-9291-5d26b6375d93.png)
-
-Windows (no borders)  
-![Ayu Light Hyper Theme - No borders](https://cloud.githubusercontent.com/assets/19519411/26419401/405fc262-4085-11e7-9c45-d3ea21fc14c3.png)
-
-Windows (header border)
-![Ayu Light Hyper Theme - Header border](https://cloud.githubusercontent.com/assets/19519411/26419403/40b8a4b8-4085-11e7-8e89-d4b280a49878.png)
-
-Windows (custom header)  
-![Ayu Light Hyper Theme - Custom header](https://cloud.githubusercontent.com/assets/19519411/26419400/404d93d0-4085-11e7-960f-288a98af3837.png)
+I've just add black color for more readable.
+Here's the screenshot.  
+![Screenshot](https://raw.githubusercontent.com/yoyoys/hyper-ayu-light/master/screenshot.png)
 
 ## Installation
 1. Open Hyper's preferences with `Cmd +`, (or manually at `~/.hyper.js`).
-2. Update your list of plugins to include `hyper-ayu-light`, like this:
+2. Update your list of plugins to include `hyper-ayu-light-special`, like this:
 
 ```javascript
   plugins: [
-    'hyper-ayu-light'
+    'hyper-ayu-light-special'
   ]
 ```
 
@@ -65,6 +55,7 @@ You can decide whether to display the tab border or not using the following conf
 - [Ayu for Vim](https://github.com/ayu-theme/ayu-vim)
 - [Ayu (dark) for Hyper](https://github.com/licatajustin/hyper-ayu)
 - [Ayu (mirage) for Hyper](https://github.com/weirdpattern/hyper-ayu-mirage)
+- [Ayu (light) for Hyper](https://www.github.com/weirdpattern/hyper-ayu-light)
 
 ## License
-MIT © Patricio Trevino
+MIT © Patricio Trevino, Yoyo Young
