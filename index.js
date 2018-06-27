@@ -24,7 +24,8 @@
 
 'use strict';
 
-const BACKGROUND = '#F5F5F5';
+let BACKGROUND = '#F5F5F5';
+
 const FOREGROUND = '#5C6773';
 
 const BLACK = '#5C6066';
@@ -46,7 +47,6 @@ const DARK_GRAY = '#828C99';
 const WHITE = '#FFFFFF';
 
 const CURSOR_COLOR = YELLOW;
-const BORDER_COLOR = BACKGROUND;
 
 let TAB_BORDER_COLOR = '#E2E4E7';
 const TAB_TEXT_COLOR = FOREGROUND;
@@ -80,6 +80,14 @@ exports.decorateConfig = (config) => {
 
   const ayu = config.ayu || {};
   const isWin = /^win/.test(process.platform);
+  if (ayu.enableVibrancy) {
+    BACKGROUND = 'rgba(255,255,255, .3)';
+
+    exports.onWindow = browserWindow => {
+      browserWindow.setVibrancy('medium-light')
+    };
+  }
+  const BORDER_COLOR = BACKGROUND;
 
   // tab border customization
   let tabBorder = '';
@@ -109,16 +117,6 @@ exports.decorateConfig = (config) => {
     borderColor: BORDER_COLOR,
     cursorColor: CURSOR_COLOR,
     colors,
-    termCSS: `
-      ${config.termCSS || ''}
-      .cursor-node[focus=true]:not([moving]) {
-        animation: blink 1s ease infinite;
-      }
-      @keyframes blink {
-        0%, 40% { opacity: 0 }
-        50%, 90% { opacity: 1 }
-      }
-    `,
     css: `
       ${config.css || ''}
       .hyper_main {
